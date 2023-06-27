@@ -189,7 +189,7 @@ The server listens on the port specified in the command line argument or default
 
 This server provides a simple yet effective way of managing SSE connections, broadcasting messages, and monitoring connections. It is also equipped with security measures to ensure that certain operations can only be carried out from the local machine.
 
-# Node.js SSE Node Client Module Documentation
+# Node.js SSEClient Module Documentation
 
 This Node.js module allows for interaction with the Server-Sent Events (SSE) server by providing functions to broadcast messages, get the number of connected clients, and initiate a server shutdown.
 
