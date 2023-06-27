@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SSE Test Page</title>
+    <script src='/client'></script>
+    <style>
+        div { overflow-y: auto;}
+    </style>
+</head>
+<body>
+<h1>SSE Test Page</h1>
+<script>
+    function Out(s)
+    {
+        if( typeof s === 'object' ) s = JSON.stringify(s)
+        const tgt = document.querySelector("div")
+        s = s.replace(/\n/g,"<br>").replace(/\r/g,"")
+        tgt.innerHTML += `<p>${s}</p>`
+        console.log(`Message type: 'ping' Data: ${s}`)
+    }
+    
+    const sseClient = new SSEClient();
+    sseClient.RegisterMessageHandler("message",Out)
+    sseClient.RegisterMessageHandler("service",Out)
+    sseClient.RegisterMessageHandler("error",Out)
+    sseClient.RegisterMessageHandler("open",Out)
+    sseClient.RegisterMessageHandler("close",Out)
+    sseClient.RegisterMessageHandler("ping",Out)
+    sseClient.RegisterMessageHandler("update",Out)
+</script>
+<div></div>
+</body>
+</html>

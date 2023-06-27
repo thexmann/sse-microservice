@@ -1,0 +1,31 @@
+GET https://127.0.0.200:9900/sse
+
+###
+
+POST https://127.0.0.200:9900/bcast
+content-type: application/json
+
+{
+    "target": "test",
+    "data": "123546"
+}
+
+###
+
+POST https://127.0.0.200:9900/bcast
+content-type: application/json
+
+{
+    "target": "New_Price",
+    "data": "127.91",
+    "event": "update"
+}
+
+
+###
+
+GET https://127.0.0.200:9900/clients
+
+###
+
+GET https://127.0.0.200:9900/exit
