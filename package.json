@@ -1,8 +1,8 @@
 {
   "name": "sseserver",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "0.6.2",
+  "description": "SSE Microserver",
+  "main": "server.js",
   "type": "module",
   "scripts": {
     "sse": "node server.js"
