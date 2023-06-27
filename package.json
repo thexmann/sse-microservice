@@ -8,8 +8,8 @@
     "sse": "node server.js"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "C. Christmann",
+  "license": "GPL 3.0",
   "dependencies": {
     "express": "^4.18.2"
   }
