@@ -96,14 +96,14 @@ For example:
 
 Clients can connect to the SSE server using JavaScript's EventSource object. Here's an example:
 
-> const es = new EventSource('http://localhost:9900/sse');
+> const es = new EventSource('http://serverIP:9900/sse');
 > 
 > res.addEventListener('service', function (event) {
->   console.log(event.data); // You are now connected to the SSE server.
+>   console.log(event.data); // You are now connected to the SSE server.  
 > }, false);
 > 
 > res.addEventListener('message', function (event) {
->   console.log(event.data); // Logs broadcasted messages.
+>   console.log(event.data); // Logs broadcasted messages.  
 > }, false);
 > 
 > res.addEventListener('ping', function (event) {
