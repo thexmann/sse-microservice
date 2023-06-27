@@ -98,17 +98,11 @@ Clients can connect to the SSE server using JavaScript's EventSource object. Her
 
 > const es = new EventSource('http://serverIP:9900/sse');
 > 
-> res.addEventListener('service', function (event) {
->   console.log(event.data);   
-> }, false); // You are now connected to the SSE server.
+> res.addEventListener('service', function (event) { console.log(event.data )}, false); // You are now connected to the SSE server.
 > 
-> res.addEventListener('message', function (event) {
->   console.log(event.data);   
-> }, false); // Logs broadcasted messages.
+> res.addEventListener('message', function (event) { console.log(event.data) }, false); // Logs broadcasted messages.
 > 
-> res.addEventListener('ping', function (event) {
->   console.log('Ping!'); 
-> }, false); // Logs when a ping event is received.
+> res.addEventListener('ping', function (event) { console.log('Ping!') }, false); // Logs when a ping event is received.
 
 ### Broadcasting Messages
 
