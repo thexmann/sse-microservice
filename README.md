@@ -201,7 +201,8 @@ This Node.js module allows for interaction with the Server-Sent Events (SSE) ser
 
 ## License
 
-Copyright 2023, C. Christmann
+Copyright 2023, C. Christmann.
+
 This program is free software: you can redistribute it and/or modify it under
 the terms of the GNU General Public License as published by the Free Software 
 Foundation, either version 3 of the License, or (at your option) any later version.
@@ -289,7 +290,8 @@ This JavaScript class, SSEClient, provides a framework to create Server-Sent Eve
 
 ## License
 
-Copyright 2023, C. Christmann
+Copyright 2023, C. Christmann.
+
 This program is free software: you can redistribute it and/or modify it under
 the terms of the GNU General Public License as published by the Free Software 
 Foundation, either version 3 of the License, or (at your option) any later version.
