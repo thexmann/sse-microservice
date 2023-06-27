@@ -241,8 +241,9 @@ Assuming the module is saved as 'SSEClient.js'.
 
 Here is an example of how to use these functions:
 
-> async function test() {  
->     // Broadcast a message  
+> 
+> async function test() {  // Broadcast a message
+>       
 >     const bcastResponse = await broadcastMessage('Hello, world!', 'myEvent')  
 >     console.log(bcastResponse)  // { success: true }  
 > 
