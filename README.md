@@ -187,8 +187,8 @@ This function removes a client from the server's clients list when the client's 
 
 The server listens on the port specified in the command line argument or defaults to port 9900 if no argument is provided. It also sets up a secure HTTPS server using the SSL certificate files (server.key and server.cert) in the ./ssl directory.
 
-> async function start() {
->   // ... server setup
+> async function start() {  
+>   // ... server setup  
 > }
 
 ## Summary
@@ -247,18 +247,18 @@ Assuming the module is saved as 'SSEClient.js'.
 
 Here is an example of how to use these functions:
 
-> async function test() {
->     // Broadcast a message
->     const bcastResponse = await broadcastMessage('Hello, world!', 'myEvent')
->     console.log(bcastResponse)  // { success: true }
+> async function test() {  
+>     // Broadcast a message  
+>     const bcastResponse = await broadcastMessage('Hello, world!', 'myEvent')  
+>     console.log(bcastResponse)  // { success: true }  
 > 
->     // Get the number of clients
->     const clientsCount = await getClientsCount()
+>     // Get the number of clients  
+>     const clientsCount = await getClientsCount()  
 >     console.log(clientsCount)  // The number of clients
 > 
->     // Exit the server
->     const exitResponse = await exitServer()
->     console.log(exitResponse)  // 'OK' or an error message
+>     // Exit the server  
+>     const exitResponse = await exitServer()  
+>     console.log(exitResponse)  // 'OK' or an error message  
 > }
 > 
 > test()
@@ -269,13 +269,13 @@ Each of the functions in this module uses error handling to throw an error if th
 
 For example:
 
-> async function test() {
->     try {
->         const bcastResponse = await broadcastMessage('Hello, world!', 'myEvent')
->         console.log(bcastResponse)
->     } catch (error) {
->         console.error('Failed to broadcast message:', error)
->     }
+> async function test() {  
+>     try {  
+>         const bcastResponse = await broadcastMessage('Hello, world!', 'myEvent')  
+>         console.log(bcastResponse)  
+>     } catch (error) {  
+>         console.error('Failed to broadcast message:', error)  
+>     }  
 > }
 > 
 > test()
@@ -341,15 +341,15 @@ This method allows the registration of custom event handler functions for specif
 
 Here's an example of how to use the SSEClient class:
 
-> // Instantiate the client
+> // Instantiate the client  
 > const client = new SSEClient();
 > 
-> // Register a custom event handler
-> client.RegisterMessageHandler('myEvent', (data) => {
->     console.log(`Received myEvent with data: ${data}`);
+> // Register a custom event handler  
+> client.RegisterMessageHandler('myEvent', (data) => {  
+>     console.log(`Received myEvent with data: ${data}`);  
 > });
 > 
-> // Now, when the server sends an event of type 'myEvent', 
+> // Now, when the server sends an event of type 'myEvent',   
 > // the client will log the event data to the console.
 
 ## Error Handling
