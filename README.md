@@ -90,7 +90,7 @@ You can also specify a host and port number:
 
 For example:
 
-> node server.js 0.0.0.0:9900
+> node server.js xx.xx.xx.xx:9900
 
 ### Client Connection
 
@@ -99,16 +99,16 @@ Clients can connect to the SSE server using JavaScript's EventSource object. Her
 > const es = new EventSource('http://serverIP:9900/sse');
 > 
 > res.addEventListener('service', function (event) {
->   console.log(event.data); // You are now connected to the SSE server.  
-> }, false);
+>   console.log(event.data);   
+> }, false); // You are now connected to the SSE server.
 > 
 > res.addEventListener('message', function (event) {
->   console.log(event.data); // Logs broadcasted messages.  
-> }, false);
+>   console.log(event.data);   
+> }, false); // Logs broadcasted messages.
 > 
 > res.addEventListener('ping', function (event) {
->   console.log('Ping!'); // Logs when a ping event is received.
-> }, false);
+>   console.log('Ping!'); 
+> }, false); // Logs when a ping event is received.
 
 ### Broadcasting Messages
 
