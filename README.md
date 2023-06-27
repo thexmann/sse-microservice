@@ -12,7 +12,8 @@ This JavaScript application creates a server that uses Server-Sent Events (SSE) 
 
 ## License
 
-Copyright 2023, C. Christmann
+Copyright 2023, C. Christmann.
+
 This program is free software: you can redistribute it and/or modify it under
 the terms of the GNU General Public License as published by the Free Software 
 Foundation, either version 3 of the License, or (at your option) any later version.
