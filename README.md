@@ -72,8 +72,8 @@ The server provides additional endpoints for monitoring connections and handling
     GET '/client' serves the SSEclient.js file.
     GET '/' serves the main.html file.
 
-The '/client' and the '/' endpoints are for testing the serevr and are only available if the 
-'testing' constant global variable is set to true:
+The '/client' and the '/' endpoints are for testing the server and are only available if the 
+'testing' constant global variable is set to true in server.js:
 
 > const testing = true
 
