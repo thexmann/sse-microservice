@@ -47,8 +47,8 @@ app.get('/sse', (req, res) => {
 	res.setHeader('Access-Control-Allow-Origin', '*');
 
 	// Add the client to the array
-	res.req = null
 	res.ip = req.ip
+	res.req = null
 	clients.push(res)
 
 	// Send initial SSE message to the client
